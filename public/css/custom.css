@@ -1,0 +1,208 @@
+/* Custom Styles for Portfolio */
+
+.navbar-dark.bg-dark {
+    background: linear-gradient(135deg, #333, #555);
+  }
+
+
+
+/* Navbar */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.navbar-brand:hover{
+  color: #00d4ff;
+}
+.nav-link {
+    color: #ddd;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-link:hover {
+    color: #00d4ff;
+    transform: scale(1.1);
+  }
+
+/* Hero Section */
+header {
+  background: linear-gradient(135deg, #007bff, #6f42c1);
+  color: white;
+  padding: 60px 0;
+  border-bottom: 4px solid #ffc107;
+}
+
+.bg-success {
+    background: linear-gradient(135deg, #f9f9f9, #a8dadc); /* Soft white to muted teal */
+    animation: gradientAnimation 6s infinite alternate;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+
+  .container {
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+/* Footer */
+/* footer {
+  background-color: #343a40;
+  color: #f8f9fa;
+  font-size: 0.9rem;
+}
+footer small {
+  color: #adb5bd;
+} */
+
+/* Home Page Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+
+h1, h2 {
+    font-weight: 800;
+  }
+
+h1.display-1 {
+  font-size: 4rem; /* Large Welcome */
+  line-height: 1.2;
+}
+
+h2.display-5 {
+  font-size: 2.5rem; /* Name Line */
+  line-height: 1.3;
+  color: #333;
+}
+
+.lead {
+  font-size: 1.2rem; /* Slightly larger description */
+}
+
+/* Button Styling */
+.btn-lg {
+  border-radius: 50px; /* Rounded buttons */
+  font-size: 1rem; /* Uniform font size */
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn-primary::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: ripple 0.6s linear;
+  }
+
+  @keyframes ripple {
+    to {
+      transform: translate(-50%, -50%) scale(4);
+      opacity: 0;
+    }
+  }
+
+.btn-outline-dark {
+  border-color: #333;
+  color: #333;
+}
+
+.btn-outline-dark:hover {
+  background-color: #333;
+  color: white;
+}
+
+/* Image Styling */
+img.rounded-circle {
+    box-shadow: 0 0 15px #00b4d8;
+  }
+
+
+img.rounded-circle:hover {
+    filter: brightness(1.1) saturate(1.2);
+    transform: scale(1.1);
+  }
+
+
+
+.shadow-lg {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.progress {
+  background-color:  #828c97; /* A darker gray for better visibility */
+}
+
+
+/* .truncated-text {
+  display: none;
+}
+
+.project-description {
+  display: block;
+} */
+
+.project-description {
+  max-height: none;
+  overflow: visible;
+}
+
+.card {
+  height: 450px;
+}
+
+/* Optional: Style the View Details button */
+.btn-block {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+  .col-md-6 {
+      text-align: center;
+  }
+
+  .project-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Show 2 lines of text (about 10-12 words) */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+}
+@media (max-width: 1024px) {
+  .project-description {
+      display: -webkit-box;
+      -webkit-line-clamp: 5; /* Show 3 lines of text (about 15 words) */
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+}
+
+
+
